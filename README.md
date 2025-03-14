@@ -1,5 +1,9 @@
 This repository includes a collection of custom ComfyUI nodes designed for highly dynamic prompt generation and structured image output. These nodes work together to enable scalable, automated, and controlled AI image generation, making them ideal for machine learning datasets, concept art, and other AI-driven applications.
 
+![A visual representation of a ComfyUI node-based workflow for structured prompt generation. The image displays interconnected nodes arranged in a logical sequence, each performing a specific function such as defining themes, generating extended prompts, processing age categories, and saving images with metadata. Nodes like 'Theme Definition,' 'Extended Prompt,' and 'Control Prompt' are visibly labeled, showing their roles in modifying and structuring input data. The workspace is organized with directional connections between nodes, illustrating how information flows through the system.](images/overview.png)
+
+* * *
+
 ## Important Terminology
 
 **Definition** - Think of this as a variable. The ID can be either numerical or named.
@@ -115,6 +119,10 @@ This prompt remains static, but the placeholders are dynamically filled in by th
 
 ### Definition AIO Node
 
+![A structured node layout in ComfyUI connecting 'Theme Definition' nodes, 'Definition Node AIO,' and 'Control Prompt' for generating complex prompts. The image features nodes for defining locations like 'volcano,' 'space station,' and 'casino,' as well as character poses such as 'scratching armpit' and 'juggling ducks.' The 'Theme Combiner' node merges definitions for streamlined access, while the 'Control Prompt' node references placeholders dynamically. Several magenta note boxes provide guidance on placeholder usage, reference integration, and how variables are passed through the workflow.](images/example4.png)
+
+* * *
+
 The **Definition AIO Node** is designed for storing and managing key definitions as simple arrays, allowing for dynamic placeholder replacement in prompts. Users can define values using numeric placeholders (e.g., \[1\], \[2\]) or named placeholders. This node provides a simple and efficient way to manage large sets of options, though it is not required for structured prompt generation.
 
 Unlike the **Theme Definition Node**, the Definition AIO Node is not instanced—it provides a single dataset that can be referenced across multiple prompts.
@@ -148,6 +156,10 @@ This node is useful for quickly swapping predefined options without needing to m
 * * *
 
 ### Theme Definition Node
+
+![A close-up view of the 'Definition Node AIO' in ComfyUI, showing how multiple variables can be stored in a single node instead of separate 'Theme Definition' nodes. The node includes predefined lists for different attributes, such as gender, hair color, drink types, and colors. A magenta note box explains that this method is useful for handling a small number of variables efficiently but may become unwieldy for large datasets. The interface emphasizes a compact approach to structured data input.](images/example3.png)
+
+* * *
 
 The **Theme Definition Node** is a more advanced and flexible way to define prompt placeholders. Unlike the **Definition AIO Node**, Theme Definition Nodes can be instantiated multiple times, allowing for fine-grained control over different aspects of the prompt. Each instance of this node defines a specific variable (e.g., clothing type, lighting condition, hairstyle), providing greater modularity in structured image generation.
 
@@ -305,3 +317,5 @@ This node can also be output as an image to Preview Image nodes or other workflo
 This ensures that every image remains traceable, reproducible, and well-documented.
 
 * * *
+
+![A node-based workflow in ComfyUI displaying multiple 'Theme Definition' nodes for categorizing attributes like 'instrument,' 'expression,' 'hairstyle,' 'color-theme,' 'shirt-type,' and 'wall-decorations.' Each node contains lists of options, such as 'guitar,' 'drums,' and 'keyboard' for instruments, and 'ponytail,' 'mohawk,' and 'curly' for hairstyles. These nodes feed into a 'Theme Combiner' node that consolidates definitions for structured prompt generation. Color-coded notes highlight key usage tips, such as ensuring words are contextually correct in prompt outputs.](images/example2.png)
