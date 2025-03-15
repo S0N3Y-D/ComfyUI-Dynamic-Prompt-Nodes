@@ -38,6 +38,8 @@ An old lady petting a [1]
 An old lady petting a [animal]
 ```
 
+![A node-based workflow in ComfyUI displaying multiple 'Theme Definition' nodes for categorizing attributes like 'instrument,' 'expression,' 'hairstyle,' 'color-theme,' 'shirt-type,' and 'wall-decorations.' Each node contains lists of options, such as 'guitar,' 'drums,' and 'keyboard' for instruments, and 'ponytail,' 'mohawk,' and 'curly' for hairstyles. These nodes feed into a 'Theme Combiner' node that consolidates definitions for structured prompt generation. Color-coded notes highlight key usage tips, such as ensuring words are contextually correct in prompt outputs.](images/example2.png)
+
 * * *
 
 ## Key Features
@@ -76,7 +78,7 @@ cd <ComfyUI directory>/custom_nodes
 Clone this repository:
 
 ```javascript
-git clone ["URL will be added after publication"]
+git clone https://github.com/S0N3Y-D/ComfyUI-Dynamic-Prompt-Nodes.git
 ```
 
 Restart ComfyUI to load the new nodes.
@@ -315,7 +317,3 @@ This node can also be output as an image to Preview Image nodes or other workflo
     
 
 This ensures that every image remains traceable, reproducible, and well-documented.
-
-* * *
-
-![A node-based workflow in ComfyUI displaying multiple 'Theme Definition' nodes for categorizing attributes like 'instrument,' 'expression,' 'hairstyle,' 'color-theme,' 'shirt-type,' and 'wall-decorations.' Each node contains lists of options, such as 'guitar,' 'drums,' and 'keyboard' for instruments, and 'ponytail,' 'mohawk,' and 'curly' for hairstyles. These nodes feed into a 'Theme Combiner' node that consolidates definitions for structured prompt generation. Color-coded notes highlight key usage tips, such as ensuring words are contextually correct in prompt outputs.](images/example2.png)
